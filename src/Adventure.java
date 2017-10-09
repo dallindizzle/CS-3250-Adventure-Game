@@ -6,7 +6,7 @@ public class Adventure {
     public static void main(String[] args) {
         Scanner in = null;
         try {
-            in = new Scanner(new File("map.txt"));
+            in = new Scanner(new File(args[0]));
         } catch (FileNotFoundException x) {
             System.out.println("File open failed.");
             x.printStackTrace();
@@ -15,7 +15,7 @@ public class Adventure {
 
         Map m = new Map();
         m.addMap(in);
-        m.printMap();
+        //m.printMap();
 
         GameChar test = new GameChar();
         test.setMap(m);

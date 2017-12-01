@@ -26,6 +26,18 @@ public class Adventure {
             choice = in.nextLine();
             char[] ch = choice.toCharArray();
             switch (ch[0]) {
+                case 's':
+                case 'S':
+                    test.findItem();
+                    break;
+                case 'd':
+                case 'D':
+                    test.dropItem(choice);
+                    break;
+                case 't':
+                case 'T':
+                    test.takeItem(choice);
+                    break;
                 case 'i':
                 case 'I':
                     test.showInventory();

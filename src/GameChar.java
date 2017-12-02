@@ -116,6 +116,10 @@ public class GameChar {
                 System.out.println(tokens[i]);
             }
         }
+        else {
+            System.out.println("You have found nothing");
+        }
+        System.out.println();
     }
 
     public void takeItem(String com) {

@@ -1,4 +1,6 @@
-public class GameChar {
+import java.io.Serializable;
+
+public class GameChar implements Serializable{
     private String[] inventory;
     private int locX;
     private int locY;

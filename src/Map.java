@@ -1,8 +1,9 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class Map {
+public class Map implements Serializable {
     private String mapString;
     private String itemFile;
     private char[][] mapArray;
